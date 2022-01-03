@@ -1,0 +1,9 @@
+-
+ name: Install nginx
+ hosts: all
+ become: true
+ task:
+  - name: install nginx
+    yum:
+      state: httpd
+      service: started 
